@@ -1,9 +1,43 @@
 # react-github-finder
 
-[UDEMY - React front to back 2019](https://www.udemy.com/modern-react-front-to-back/learn/lecture/14969756#bookmarks)
-Brad Traversy
+[UDEMY - React front to back 2019](https://www.udemy.com/modern-react-front-to-back/learn/lecture/14969756#bookmarks)<br>
+by Brad Traversy
 
 ## My Notes
+
+### COMPONENTS
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.<br>
+Conceptually, components are like JavaScript **functions**.<br>
+They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.<br>
+
+### PROPS
+In React props is short for **properties**.<br>
+They are single **values** or **objects** containing a set of values that are passed to React Components on creation using a naming convention similar to HTML-tag attributes.<br>
+
+### STATE
+The heart of every React component is its “state”, an object that determines how that component renders & behaves.<br>
+In other words, “state” is what allows you to create components that are dynamic and interactive.
+
+### LIFECYCLE METHODS
+You can declare special methods on the component class to run some code when a component mounts and unmounts.<br>
+These methods are called **“lifecycle methods”**.<br>
+The **componentDidMount()** method runs after the component output has been rendered to the DOM. <br>
+
+### What is the difference between state and props?
+**props (short for “properties”) and state are both plain JavaScript objects**.<br>
+While both hold information that influences the output of render, they are different in one important way: 
+- **props** get passed to the component (similar to function **parameters**)
+- whereas **state** is managed within the component (similar to **variables** declared within a function).
+
+### => Read also
+- [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
+- [React state vs props](https://lucybain.com/blog/2016/react-state-vs-pros/)
+
+### What does setState do?
+**setState()** schedules an update to a component’s state object.<br>
+When state changes, the component responds by re-rendering.
+
+
 
 ### STATE is just a JS object.
 
@@ -17,7 +51,7 @@ The way that you get the data into the UserItem is through props.<br>
 
 ### PROPS are basically properties you can pass into a component from outside.
 
-PROPTYPES is basically type checking. It will tell you if your prop should be a string, number, object, array, anything.<br>
+While PropType is basically type checking. It will tell you if your prop should be a string, number, object, array, anything.<br>
 
 Destructuring = pulling stuff out from that object:<br>
 
@@ -71,12 +105,13 @@ export class Users extends Component { render() { return (
   </div> );}}
 ```
 
-** FAST NOTES ** <br>
-** App has state, it is a class-based component. It passes its state to Users through props.<br>
-Navbar has props, but no state: it is a functional component.<br>
-UserItem has props, but no state: it is a functional component.<br>
-Users has state, it is a class-based component. It passes its state to UserItem as props.<br>
-Later, with hook, it will be possible to transform also Users in a functional component.<br> **
+## FAST NOTES <br>
+
+**App has state, it is a class-based component. It passes its state to Users through props.**<br>
+**Navbar has props, but no state: it is a functional component.**<br>
+**UserItem has props, but no state: it is a functional component.**<br>
+**Users has state, it is a class-based component. It passes its state to UserItem as props.**<br>
+**Later, with hook, it will be possible to transform also Users in a functional component.**<br>
 
 You declare the state in the App.js Class Component:
 
@@ -165,6 +200,12 @@ instead of
 ```
 <a href='/'>Home</a>
 ```
+
+## A couple of hooks: useState and useEffect
+- **useState** allows you to have states in functional components
+- **useEffect** allows you to mimic lifecycle methods
+- useContext
+- useReducer
 
 ## Code & Resources
 
