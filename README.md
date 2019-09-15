@@ -6,40 +6,45 @@ by Brad Traversy
 ## My Notes
 
 ### COMPONENTS
+
 Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.<br>
 Conceptually, components are like JavaScript **functions**.<br>
 They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.<br>
 
 ### PROPS
+
 In React props is short for **properties**.<br>
 They are single **values** or **objects** containing a set of values that are passed to React Components on creation using a naming convention similar to HTML-tag attributes.<br>
 
 ### STATE
+
 The heart of every React component is its “state”, an object that determines how that component renders & behaves.<br>
 In other words, “state” is what allows you to create components that are dynamic and interactive.
 
 ### LIFECYCLE METHODS
+
 You can declare special methods on the component class to run some code when a component mounts and unmounts.<br>
 These methods are called **“lifecycle methods”**.<br>
 The **componentDidMount()** method runs after the component output has been rendered to the DOM. <br>
 
 ### What is the difference between state and props?
+
 **props (short for “properties”) and state are both plain JavaScript objects**.<br>
-While both hold information that influences the output of render, they are different in one important way: 
+While both hold information that influences the output of render, they are different in one important way:
+
 - **props** get passed to the component (similar to function **parameters**)
 - whereas **state** is managed within the component (similar to **variables** declared within a function).
 
 ### => Read also
-- [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
-- [React state vs props](https://lucybain.com/blog/2016/react-state-vs-pros/)
+
+- [Props vs State](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)<br>
+- [React state vs props](https://lucybain.com/blog/2016/react-state-vs-pros/)<br>
 
 ### What does setState do?
 **setState()** schedules an update to a component’s state object.<br>
 When state changes, the component responds by re-rendering.
 
-
-
-### STATE is just a JS object.
+### STATE is just a JS object
 
 Component Level State means that your state is contained within a single component. So, you create a component, you add a state to it, which later will be App Level State because you pass it in as props. <br>
 
@@ -201,11 +206,17 @@ instead of
 <a href='/'>Home</a>
 ```
 
-## A couple of hooks: useState and useEffect
+## Hooks
+
+Functions that let you "hook" into react state and lifecycle features from a function component.
+Hooks allow you to use functional components that are slimmer, cleaner and easier to use.
+
 - **useState** allows you to have states in functional components
-- **useEffect** allows you to mimic lifecycle methods
-- useContext
-- useReducer
+- **useEffect** allows you to mimic lifecycle methods like componentDidMount or componentDidUpdate, allows to have side effects in your component
+- **useContext** used with the context API, it makes very easy to bring in your context into any component
+- **useReducer** used with the context API, it allows you to create a really nice Redux-like reducer without having to use something like Redux, basically it is a function that you can dispatch actions to manipulate your app level state and then it sends that state down to your components that need it.
+- **useRef...** you will see later
+- you can also create **custom hooks**!
 
 ## Code & Resources
 
