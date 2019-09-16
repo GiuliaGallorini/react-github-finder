@@ -1,7 +1,9 @@
 # react-github-finder
 
 [UDEMY - React front to back 2019](https://www.udemy.com/modern-react-front-to-back/learn/lecture/14969756#bookmarks)<br>
-by Brad Traversy
+by Brad Traversy<br><br>
+
+[Link to my App deployed](https://my-awesome-first-react-app-with-brad.netlify.com/)<br>
 
 ## My Notes
 
@@ -221,10 +223,26 @@ Hooks allow you to use functional components that are slimmer, cleaner and easie
 ## Implementing Context
 
 **Redux** is needed for very large application, but the context API gives you a really nice solution for small to medium sized apps.<br>
-=> src > context > alert > alertContext.js && alertReducer.js && AlertState.js
-=> src > context > github > githubContext.js && githubReducer.js && GithubState.js
+=> src > context > alert > alertContext.js && alertReducer.js && AlertState.js<br>
+=> src > context > github > githubContext.js && githubReducer.js && GithubState.js<br>
+See the commits on GitHub.<br>
 
-## Code & Resources
+## Deploy to Netlify
+
+```
+npm i -g netlify-cli
+```
+
+If you are on a Mac, since you are installing it globally (-g), you have to run sudo:
+
+```
+sudo npm i -g netlify-cli
+netlify init
+npm run build
+netlify deploy --prod
+```
+
+## Code & Resources by Brad
 
 The final code for this project can be found in this Github repo:
 
@@ -248,7 +266,7 @@ https://api.github.com/users/bradtraversy
 
 https://api.github.com/users/bradtraversy/repos
 
-## REACT
+## REACT by React Team
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
