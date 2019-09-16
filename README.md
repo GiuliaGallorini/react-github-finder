@@ -218,6 +218,10 @@ Hooks allow you to use functional components that are slimmer, cleaner and easie
 - **useRef...** you will see later
 - you can also create **custom hooks**!
 
+## Implementing Context
+
+**Redux** is needed for very large application, but the context API gives you a really nice solution for small to medium sized apps.<br>
+
 ## Code & Resources
 
 The final code for this project can be found in this Github repo:
