@@ -221,6 +221,8 @@ Hooks allow you to use functional components that are slimmer, cleaner and easie
 ## Implementing Context
 
 **Redux** is needed for very large application, but the context API gives you a really nice solution for small to medium sized apps.<br>
+=> src > context > alert > alertContext.js && alertReducer.js && AlertState.js
+=> src > context > github > githubContext.js && githubReducer.js && GithubState.js
 
 ## Code & Resources
 
