@@ -2,6 +2,7 @@
 
 [UDEMY - React front to back 2019](https://www.udemy.com/modern-react-front-to-back/learn/lecture/14969756#bookmarks)<br>
 by Brad Traversy<br><br>
+1st Project
 
 [Link to my App deployed](https://my-awesome-first-react-app-with-brad.netlify.com/)<br>
 
